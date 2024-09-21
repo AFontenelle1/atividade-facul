@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Animes</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #343a40;
+      color: white;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .anime-title {
+      color: #ff9800;
+    }
+    .naruto-bg {
+      background-color: #f0e68c;
+    }
+    .dragonball-bg {
+      background-color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="p-3 text-center">
+    <h1 class="anime-title">Mundo dos Animes</h1>
+    <nav class="nav justify-content-center">
+      <a class="nav-link text-white" href="#naruto">Naruto</a>
+      <a class="nav-link text-white" href="#dragonball">Dragon Ball</a>
+      <a class="nav-link text-white" href="#bleach">Bleach</a>
+    </nav>
+  </header>
+
+  <!-- Corpo -->
+  <div class="container mt-5">
+
+    <!-- Seção Naruto -->
+    <div id="naruto" class="container naruto-bg p-5 mb-5">
+      <h2 class="text-center">Naruto</h2>
+      <p>Naruto é uma história sobre um jovem ninja que busca se tornar o Hokage, o líder da sua vila, enquanto enfrenta muitos desafios e faz amigos pelo caminho. Suas aventuras nos ensinam sobre perseverança, amizade e nunca desistir de nossos sonhos.</p>
+    </div>
+
+    <!-- Seção Dragon Ball -->
+    <div id="dragonball" class="container dragonball-bg p-5 mb-5">
+      <h2 class="text-center">Dragon Ball</h2>
+      <p>Dragon Ball segue as aventuras de Goku, um guerreiro Saiyajin que defende a Terra e outros planetas de inimigos poderosos. Ao longo da série, Goku e seus amigos enfrentam desafios cada vez mais difíceis, elevando seus poderes a novos níveis.</p>
+    </div>
+
+    <!-- Seção Bleach -->
+    <div id="bleach" class="container p-5 mb-5" style="background-color: #b0e0e6;">
+      <h2 class="text-center">Bleach</h2>
+      <p>Bleach é uma série de ação que gira em torno de Ichigo Kurosaki, um adolescente com a habilidade de ver espíritos. Ao adquirir os poderes de um Shinigami, ele tem a responsabilidade de proteger o mundo dos vivos e ajudar almas perdidas a encontrarem paz.</p>
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; <span id="year"></span> Mundo dos Animes</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript para adicionar o ano atual -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
